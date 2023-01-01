@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Pagina nueva 1</title>
+</head>
+
+<body bgcolor="#000000" text="#00FF00">
+
+<p align="center">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="logo" width="238" height="55">
+  <param name="movie" value="logo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="logo" src="paginas/logo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="238" height="55"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+<br>
+<span lang="ES-AR"><b><font face="Verdana" size="4">Modalidad Aventura</font></b></span></p>
+<hr color="#00FF00">
+<p align="center"><font size="1" face="Verdana"><b><a href="config.html">Volver
+atras</a></b></font></p>
+<hr color="#00FF00">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><font size="1" face="Verdana">Para
+configurar el mapa aventura, necesitamos ser Dios.<br>
+Nos vamos al mapa que queremos utilizar para la aventura. Y escribimos:</font></span></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><span lang="ES-AR" style="mso-ansi-language: ES-AR">Syntaxis:
+      /AQUIAVENTURA &lt;tiempo&gt;<br>
+      Determina el lugar donde estamos parados como el comienzo de la aventura,
+      además de determinar el tiempo de tal, de 1 a 30 minutos.&nbsp;</span></font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><font size="1" face="Verdana">Una
+vez hecho esto, solo basta poner el precio de la aventura, desde el Host</font></span></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><b>OPCIONES.ini</b><br>
+      ...<br>
+      [PRECIOS]<br>
+      ...<br>
+      BoletoAventura=20000<br>
+      ...</font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><font size="1" face="Verdana">y
+el NPC Aventurero.</font></span></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><b>DAT\NPCs.dat</b><br>
+      ...<br>
+      [NPC26] 'NPC Aventurero<br>
+      NpcType=9<br>
+      Name=Aventurero<br>
+      Desc=Si deseas vivir una verdadera aventura, escribe '/AVENTURA'<br>
+      Head=9<br>
+      Body=1<br>
+      Heading=3<br>
+      Movement=0<br>
+      Domable=0<br>
+      ...</font></td>
+  </tr>
+</table>
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><font size="1" face="Verdana">Para
+desactivarlo, poner /NOAVENTURA.</font></span></p>
+<hr color="#00FF00">
+
+</body>
+
+</html>

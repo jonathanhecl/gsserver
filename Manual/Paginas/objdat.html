@@ -1,0 +1,320 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Pagina nueva 1</title>
+</head>
+
+<body bgcolor="#000000" text="#00FF00">
+
+<p align="center">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="logo" width="238" height="55">
+  <param name="movie" value="logo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="logo" src="paginas/logo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="238" height="55"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+<br>
+<b><font face="Verdana" size="4">Configurar el Servidor - OBJ.DAT</font></b></p>
+<hr color="#00FF00">
+<p align="center"><font size="1" face="Verdana"><b><a href="config.html">Volver
+atras</a></b></font></p>
+<p align="center"><font size="1" face="Verdana"><b><a href="#Objetos (Ejemplos)">Objetos
+(Ejemplos)</a><br>
+<a href="#Variables agregadas a Objetos">Variables agregadas a Objetos</a><br>
+</b><a href="#ExclusivoClase">ExclusivoClase</a><br>
+<a href="#NoSeCae">NoSeCae</a><br>
+<a href="#NoSeVende">NoSeVende</a><br>
+<a href="#SoloNPC">SoloNPC</a><br>
+<a href="#Paraliza">Paraliza</a><br>
+<a href="#NoParalisis">NoParalisis</a><br>
+<a href="#Devuelve">Devuelve</a><br>
+<a href="#NumCabeza">NumCabeza</a><br>
+<a href="#Arcos Magicos">Arcos Magicos</a><br>
+<a href="#Objetos Especiales">Objetos Especiales (Poder, Magic y Agilidad)</a>&nbsp;<br>
+</font><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><span style="mso-bidi-font-size: 7.5pt"><a href="#Minimo de Nivel para Poder Usarse/Equiparse">Minimo
+de Nivel para Poder Usarse/Equiparse</a>&nbsp;<br>
+<a href="#Baculos">Baculos</a><br>
+<a href="#Defensa Magica">Defensa Magica</a></span></font></span></p>
+<hr color="#00FF00">
+<p><font face="Verdana" size="2"><span lang="ES-AR"><b>TIPOPOCION - Tipos de
+pociones:<br>
+</b><span style="mso-ansi-language: ES-AR">1 - modif. la agilidad<br>
+2 - modif. la fuerza<br>
+3 - Restaura HP<br>
+4 - Restaura MANA<br>
+5 - Cura veneno<br>
+6 - Desparalizante<span style="mso-tab-count: 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} Hiper<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp; </span>}
+ZipAO - Resurrección<br>
+7 - Invisibilidad<span style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} Hiper<br>
+8 - Resurrección<span style="mso-tab-count: 4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} Hiper<br>
+9 - Resurrección infinita<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;<span style="mso-tab-count: 1">
+</span>} GS<br>
+10 - Fuerza y Agilidad<span style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} GS<br>
+11 – Poción de repulsión&nbsp;<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} GS</span></span></font></p>
+<p><span style="mso-ansi-language: ES-AR" lang="ES-AR"><font face="Verdana" size="2"><b>OBJTYPE
+- Tipos de objeto:<br>
+</b>...<b><br>
+</b>2 - Arma<br>
+...<br>
+36 - Accesorio&nbsp;&nbsp;&nbsp;</font></span><font face="Verdana" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} GS</font></p>
+<hr color="#00FF00">
+<p><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="Objetos (Ejemplos)">Objetos (Ejemplos)</a></font></b></span></p>
+<hr color="#008000">
+<p><font face="Verdana" size="1">[OBJ578]<br>
+Name=Gema de resureccion infinita<br>
+GrhIndex=702<br>
+ObjType=11<br>
+TipoPocion=9<br>
+NoSeVende=1<br>
+NoSeCae=1</font></p>
+<hr color="#008000">
+<p><font face="Verdana" size="1">[OBJ579]<br>
+Name=Game de fuerza y agilidad<br>
+GrhIndex=701<br>
+ObjType=11<br>
+TipoPocion=10<br>
+Valor=2000<br>
+DuracionEfecto=1000<br>
+MaxModificador=8<br>
+MinModificador=1</font></p>
+<hr color="#008000">
+<p><font face="Verdana" size="1">[OBJ580]<br>
+Name=Pocion repelente<br>
+GrhIndex=543<br>
+ObjType=11<br>
+TipoPocion=11<br>
+Valor=3000<br>
+DuracionEfecto=1000</font></p>
+<hr color="#00FF00">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="Variables agregadas a Objetos">Variables
+agregadas a Objetos</a> </font></b></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1"><a name="ExclusivoClase">ExclusivoClase</a></font></span></b></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1">Al
+igual que en los hechizos, esta variable sirve para que solo funcione el objeto
+si la utiliza una clase especifica, es especial para usar en las armas.<br>
+ExclusivoClase=CLERIGO<o:p>
+</o:p>
+</font></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1"><a name="NoSeCae">NoSeCae</a></font></span></b><a name="NoSeCae"><font face="Verdana" size="1"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><o:p>
+</o:p>
+</span></font></a></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1">Esta
+variable puede tomar solo dos valores 0 y 1, y determina si el objeto se cae o
+no, si es 1 no se cae y si es 0 o no existe se cae.<o:p>
+</o:p>
+</font></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1">Ejemplo:
+NoSeCae=1<o:p>
+</o:p>
+</font></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1"><a name="NoSeVende">NoSeVende</a></font></span></b><a name="NoSeVende"><font face="Verdana" size="1"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><o:p>
+</o:p>
+</span></font></a></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1">Esta
+variable solo toma dos valores 0 y 1, y sirve para que los NPC que puedan
+comprarla no la pongan a la venta. Si es un item valioso y difícil de conseguir
+es recomendable utilizar esta variable, porque por ejemplo, en vendedor de
+Banderbill es capaz de vender después nuestro item, por eso existe esta
+variable. <o:p>
+</o:p>
+</font></span></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1">NoSeVende=1<o:p>
+</o:p>
+</font></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="1"><a name="SoloNPC">SoloNPC<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.4pt"><span lang="ES-AR"><font face="Verdana" size="1">Si
+a un arma, le colocamos esta variable, que puede ser 0 o 1, si es 1 el arma solo
+podrá atacar a un NPC, no servirá para atacar usuarios.<br>
+SoloNPC=1</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font face="Verdana" size="1"><a name="Paraliza">Paraliza<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.4pt"><span lang="ES-AR"><font face="Verdana" size="1">Si
+es un arma, podemos determinan las probabilidades de paralizar del arma. Valores
+del 0 al 100.<br>
+Paraliza=40</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font face="Verdana" size="1"><a name="NoParalisis">NoParalisis<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.4pt"><span lang="ES-AR"><font face="Verdana" size="1">Si
+es una armadura, podemos indicarles las probabilidades de resistirse a ser
+paralizado que tiene la armadura. Valores del 0 al 100.<br>
+NoParalisis=20</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font face="Verdana" size="1"><a name="Devuelve">Devuelve<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.25pt"><span lang="ES-AR"><font face="Verdana" size="1">Solo
+para escudos o armaduras. Se trata de un valor del 0 al 100, que indica si el
+escudo devuelve un ataque mágico o no, el valor q contiene es el porcentaje q
+devolverá al atacante, a su vez también protege al atacado en la mitad de lo q
+devolvió. Ejemplo:<br>
+Devuelve=1.4<br>
+Eso significa q devolverá el 1.4% del daño, y protegerá al atacado por 0.7%
+del daño.<br>
+Minimo Valor: <b>0</b> / Maximo Valor: <b>100</b></font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><a name="NumCabeza">NumCabeza<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.25pt"><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1">Utilizable
+solo en ropas, nos permitirá cambiar la cabeza a la vez q el body. Para hacer
+una ropa q nos quite la cabeza, no podremos usar NumCabeza=0, tendremos q
+utilizar NumCabeza=-1 para poder hacer q no tenga cabeza, después para ponerle
+otra cabeza, temporalmente, o sea, es solo por usar esta ropa, no es permanente.
+NumCabeza=11</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><span style="mso-bidi-font-size: 7.5pt"><a name="Arcos Magicos">Arcos
+Magicos </a></span></font></span><a name="Arcos Magicos"><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"></o:p>
+</font></span></a></b></p>
+<div align="center">
+  <center>
+  <table bgcolor="#003300" width="793">
+    <tr>
+      <td width="164" height="26"><font face="Verdana" size="1">...<br>
+        [OBJ478]<br>
+        Objtype=2<br>
+        ...<br>
+        SubTipo=1<br>
+        Mana=100<br>
+        ...</font></td>
+      <td width="615" height="26"><font face="Verdana" size="1">Objtype=2
+        &lt;&lt; Indica que un Arco<br>
+        <b>SubTipo=1 &lt;&lt; Indica que es Magico<br>
+        Mana=100 &lt;&lt; Indica el consumo magico</b><br>
+        <br>
+        Por ejemplo, esto nos quitaria 100 de mana por cada disparo que hagamos.</font></td>
+    </table>
+  </center>
+  </div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><span style="mso-bidi-font-size: 7.5pt"><a name="Objetos Especiales">Objetos
+Especiales </a></span></font></span><a name="Objetos Especiales"><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"></o:p>
+</font></span></a></b></p>
+  <div align="center">
+    <center>
+    <table bordercolor="#003300" bgcolor="#003300" width="799">
+      <tr>
+        <td width="167" height="26"><font face="Verdana" size="1"><b>...<br>
+          [OBJx]<br>
+          ...<br>
+          Poder=1.2<br>
+          Magic=1.4<br>
+          Agilidad=1.2<br>
+          ...</b></font></td>
+        <td width="618" height="26">
+          <p align="left"><font face="Verdana" size="1">Ahora disponemos de
+          estas tres variables nuevas, que nos permitirar crear objetos que nos
+          suban o bajen, poder, magia y agilidad.<br>
+          <br>
+          <b>Poder</b> - Nos modifica el daño con el que pegamos con arco u
+          espada.<br>
+          <b>Magic</b> - Nos modifica el daño de las magias.<br>
+          <b>Agilidad</b> - Nos da mas evacion a la hora de recibir un golpe</font></p>
+        </td>
+      </table>
+    </center>
+    </div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><a name="Minimo de Nivel para Poder Usarse/Equiparse"><span style="mso-bidi-font-size: 7.5pt">Minimo
+de Nivel para Poder Usarse/Equiparse&nbsp;</span></a></font></span></b></p>
+<div align="center">
+  <center>
+    <table bordercolor="#003300" bgcolor="#003300" width="799">
+      <tr>
+        <td width="167" height="26"><font face="Verdana" size="1"><b>...<br>
+          [OBJx]<br>
+          ...<br>
+          MinNivel=15<br>
+          ...</b></font></td>
+        <td width="618" height="26">
+          <p align="left"><font face="Verdana" size="1">En este ejemplo, el
+          objeto x solo podra ser utilizado despues de tener el minimo de Nivel
+          o superior.<br>
+          En este ejemplo, Nivel 15.</font></p>
+        </td>
+      </table>
+  </center>
+</div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><span style="mso-bidi-font-size: 7.5pt"><a name="Baculos">Baculos</a></span></font></span></b></p>
+<div align="center">
+  <center>
+    <table bordercolor="#003300" bgcolor="#003300" width="799">
+      <tr>
+    <td width="163" height="26"><font face="Verdana" size="1"><b>OBJ.dat</b><br>
+      <br>
+      [OBJx]<br>
+      ...<br>
+      Objtype=2<br>
+      ...<br>
+      StaffPower=2<br>
+      StaffDamageBonus=30<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">Objtype=2, indica que es un
+      arma.<br>
+      StaffPower=2, indica que el nivel del baculo es 2.<br>
+      StaffDamageBonus=30, indica que el bonus de daño es el 36%.</font></td>
+      </tr>
+      </table>
+  </center>
+</div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR" style="mso-bidi-font-size: 7.5pt"><font face="Verdana" size="1"><span style="mso-bidi-font-size: 7.5pt"><a name="Defensa Magica">Defensa
+Magica&nbsp;</a></span></font></span></b></p>
+<blockquote>
+<p align="left"><font size="1" face="Verdana">Solo utilizable en Cascos,
+Herramientas, Armaduras y Accesorios.<br>
+El item equipado, con estos campos, nos reducira el daño de cualquier ataque
+magico proveniente de un Usuario o de un NPCs.</font></p>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font size="1" face="Verdana"><b>OBJ.dat</b><br>
+      <br>
+      [OBJx]<br>
+      ...<br>
+      DefensaMagicaMin=20<br>
+      DefensaMagicaMax=25<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">Indica que nos protejera de
+      magia, de 20 a 25 puntos de daño.</font></td>
+  </tr>
+</table>
+<p align="left"><font size="1" face="Verdana">El valor minimo es 0, y el maximo
+32000.</font></p>
+</blockquote>
+<hr color="#00FF00">
+
+</body>
+
+</html>

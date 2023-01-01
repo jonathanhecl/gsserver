@@ -1,0 +1,249 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Pagina nueva 1</title>
+</head>
+
+<body bgcolor="#000000" text="#00FF00">
+
+<p align="center">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="logo" width="238" height="55">
+  <param name="movie" value="logo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="logo" src="paginas/logo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="238" height="55"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+<br>
+<b><font face="Verdana" size="4">Configurar el Servidor - HECHIZOS.DAT</font></b></p>
+<hr color="#00FF00">
+<p align="center"><font size="1" face="Verdana"><b><a href="config.html">Volver
+atras</a></b></font></p>
+<p align="center"><font size="1" face="Verdana"><b><a href="#Hechizos (Ejemplo)&nbsp;">Hechizos
+(Ejemplo)</a><br>
+<a href="#Variables agregadas a Hechizos">Variables agregadas a Hechizos</a><br>
+</b><a href="#ExclusivoClase">ExclusivoClase</a><br>
+<a href="#RemoverEstupidez">RemoverEstupidez</a><br>
+<a href="#RemoverCeguera">RemoverCeguera</a><br>
+<a href="#Timer">Timer</a><br>
+<a href="#Explosión Mágica">Explosión Mágica<br>
+</a><a href="#Mimetizmo">Mimetizmo</a><br>
+<a href="#Inmovilizar">Inmovilizar</a><br>
+<a href="#Remover Invisibilidad Parcial">Remover Invisibilidad Parcial</a><br>
+<a href="#Hechizos que Requieren Stamina">Hechizos que Requieren Stamina</a><br>
+<a href="#Hechizos que Utilizan Baculos">Hechizos que Utilizan Baculos</a></font></p>
+<hr color="#00FF00">
+<p><span lang="ES-AR"><font face="Verdana" size="2"><b>TARGET – Objetivos de
+Hechizos:</b><br>
+</font></span><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="2">1
+– Usuarios<br>
+2 – NPCs<br>
+3 – Usuarios y NPCs<br>
+4 - Terreno<o:p></o:p>
+<br>
+5 - De Area&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} GS
+</font></span></p>
+<p><span lang="ES-AR"><font face="Verdana" size="2"><b>TIPO - Tipos de Hechizos:</b><br>
+</font></span><span lang="ES-AR" style="mso-ansi-language: ES-AR"><font face="Verdana" size="2">1
+– Modifica las Propiedades(Estadísticas, etc)<br>
+2 – Modifica el Estado<br>
+3 – Materializa<br>
+4 – Invoca<br>
+5 – Explosión Mágica<span style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>} GS</font></span></p>
+<hr color="#00FF00">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="Hechizos (Ejemplo)&nbsp;">Hechizos
+(Ejemplo)&nbsp;</a></font></b></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><font face="Verdana" size="1">[HECHIZO34]<br>
+Nombre=Destruccion<br>
+Desc=Ataca seguidamente con misiles magicos a un espacio de la pantalla.<br>
+PalabrasMagicas=d3strUkc10n m4s1v4!!<br>
+HechizeroMsg=Has llamado a la furia de los dioses<br>
+Tipo=5<br>
+Target=4&nbsp;<br>
+WAV=16<br>
+FXgrh=10<br>
+Loops=1<br>
+Timer=10<br>
+SubeHP=2<br>
+MinHP=25<br>
+MaxHP=35<br>
+MinSkill=70<br>
+ManaRequerido=820</font></p>
+<hr color="#00FF00">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="Variables agregadas a Hechizos">Variables
+agregadas a Hechizos</a> </font></b></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><font face="Verdana" size="1"><span style="mso-ansi-language: ES-AR" lang="ES-AR"><a name="ExclusivoClase">ExclusivoClase</a></span></font></b><a name="ExclusivoClase"><font face="Verdana" size="1"><span style="mso-ansi-language: ES-AR" lang="ES-AR"><o:p>
+</o:p>
+</span></font></a></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">Los
+hechizos tienen una variable, llamada ExcluvisoClase, si nosotros la ponemos y
+le ponemos una clase valida, ejem, clerigo, paladin, etc. ese hechizo solo podrá
+ser utilizado por un usuario de esa clase. Nos permite hacer magias especificas
+para una clase en especial. Ejemplo: ExclusivoClase = Guerrero<o:p>
+</o:p>
+</span></font></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">Si
+se ingresa una clase invalida, el programa anula la clase al cargarla para no
+provocar errores.<o:p>
+</o:p>
+</span></font></p>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="RemoverEstupidez">RemoverEstupidez</a></font></span></h3>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">Determina
+si quita estupidez el hechizo.<br>
+RemoverEstupidez=1<o:p>
+</o:p>
+</span></font></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR"><a name="RemoverCeguera">RemoverCeguera<o:p>
+</o:p>
+</a>
+</span></font></b></p>
+<p class="MsoNormal" style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">Determina
+si quita ceguera el hechizo.<o:p>
+</o:p>
+</span></font></p>
+<p class="MsoNormal" style="TEXT-INDENT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">RemoverCeguera=1<o:p>
+</o:p>
+</span></font></p>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Timer">Timer</a></font></span></h3>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.25pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span style="mso-ansi-language: ES-AR" lang="ES-AR">Indica
+la duración de un hechizo tipo 6, de explosión mágica.<br>
+Timer=1000, si ponemos Timer=0 o no ponemos Timer, la magia se tirara una sola
+vez.<o:p>
+</o:p>
+</span></font></p>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Explosión Mágica">Explosión Mágica</a></font></span></h3>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.25pt; mso-layout-grid-align: none"><span lang="ES-AR"><font size="1" face="Verdana">Para
+crear un hechizo de este tipo, tendremos que ponerle Tipo 5, Target 4, y
+SubeHP=2, con un máximo y mínimo de daño. Y también la cantidad de mana que
+nos consumirá. Es un hechizo que realmente se hace sentir en todo el mapa, así
+que supongo no lo querrás poner muy barato. Se combina con Timer.<br>
+<br>
+Actualmente la Explosión Mágica, <b>solo daña</b> a Usuarios y NPC.</font></span></p>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Mimetizmo">Mimetizmo</a></font></span></h3>
+<blockquote>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font size="1" face="Verdana"><b>HECHIZOS.dat</b><br>
+      <br>
+      [HECHIZOx]<br>
+      ...<br>
+      Tipo=2<br>
+      Target=1<br>
+      ...<br>
+      Mimetiza=1<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">Solo es arrojable sobre
+      usuarios, no administradores o GM's.<br>
+      Mimetiza=1, activa el efecto de
+      mimetizmo.<br>
+      Este efecto nos dejara por un tiempo copiar la forma de otro personaje.
+      </font></td>
+  </tr>
+</table>
+</blockquote>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Inmovilizar">Inmovilizar</a></font></span></h3>
+<blockquote>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font size="1" face="Verdana"><b>HECHIZOS.dat</b><br>
+      <br>
+      [HECHIZOx]<br>
+      Nombre=Inmovilizar<br>
+      ...<br>
+      Inmoviliza=1<br>
+      Paraliza=0<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">Inmoviliza=(1/0), indica que
+      inmoviliza, no paraliza.<br>
+      Inmovilizar es diferente a paralizar para los NPC.<br>
+      Los NPC inmovilizados, podran golpear a quien se pare frente al lado que
+      esta mirando el NPC, y en el caso de ser NPC hechizeros, podran lanzar
+      hechizos en linia a donde quedaron mirando.</font></td>
+  </tr>
+</table>
+</blockquote>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Remover Invisibilidad Parcial">Remover
+Invisibilidad Parcial</a></font></span></h3>
+<blockquote>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font size="1" face="Verdana"><b>HECHIZOS.dat</b><br>
+      <br>
+      [HECHIZOx]<br>
+      ...<br>
+      Target=4<br>
+      ...<br>
+      RemueveInvisibilidadParcial=1<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">RemueveInvisibilidadParcial=(1/0),
+      significa que el hechizo remueve invilibilidad parcialmente.<br>
+      Para ello, el hechizo debe ser si o si, de terreno. (Target=4)</font></td>
+  </tr>
+</table>
+</blockquote>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Hechizos que Requieren Stamina">Hechizos
+que Requieren Stamina</a></font></span></h3>
+<blockquote>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font size="1" face="Verdana"><b>HECHIZOS.dat</b><br>
+      <br>
+      [HECHIZOx]<br>
+      ...<br>
+      StaRequerido=15<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font size="1" face="Verdana">StaRequerido=15, significa
+      que este hechizo necesitara 15 puntos de stamina.</font></td>
+  </tr>
+</table>
+</blockquote>
+<hr color="#008000">
+<h3><span lang="ES-AR"><font size="1" face="Verdana"><a name="Hechizos que Utilizan Baculos">Hechizos
+que Utilizan Baculos</a></font></span></h3>
+<blockquote>
+<table border="0" bgcolor="#003300" width="567" height="1">
+  <tr>
+    <td width="163" height="26"><font face="Verdana" size="1"><b>HECHIZOS.dat</b><br>
+      <br>
+      [HECHIZOx]<br>
+      ...<br>
+      NeedStaff=1<br>
+      StaffAffected=0<br>
+      ...</font></td>
+    <td width="390" height="26">
+      <p align="left"><font face="Verdana" size="1">NeedStaff indica el nivel
+      del bacuro minimo requerido.<br>
+      StaffAffected (1/0), indica si se aplicara la el porcentaje de daño del
+      baculo utilizado.</font></td>
+  </tr>
+</table>
+</blockquote>
+<hr color="#00FF00">
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Pagina nueva 1</title>
+</head>
+
+<body bgcolor="#000000" text="#00FF00">
+
+<p align="center">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="logo" width="238" height="55">
+  <param name="movie" value="logo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="logo" src="paginas/logo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="238" height="55"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+<br>
+<b><font face="Verdana" size="4">Configurar el Servidor -
+NPCs.DAT/NPCs-HOSTILES.DAT</font></b></p>
+<hr color="#00FF00">
+<p align="center"><font size="1" face="Verdana"><b><a href="config.html">Volver
+atras</a></b></font></p>
+<p align="center"><font size="1" face="Verdana"><b><a href="#NPCs (Ejemplos)">NPCs
+(Ejemplos)</a><br>
+<a href="#Variables agregadas a NPCs-Hostiles">Variables agregadas a
+NPCs-Hostiles</a><br>
+</b><a href="#Hijos">Hijos</a><br>
+<a href="#NoMagia">NoMagia</a><br>
+<a href="#BarreraEspejo">BarreraEspejo</a><br>
+<a href="#NPC con Equipamiento">NPC con Equipamiento</a><br>
+<a href="#NPC que Lanzan Hechisos a Personajes Invisibles INTELIGENTEMENTE">NPC
+que lanzan Hechizos a Personajes Invisibles INTELIGENTEMENTE</a><br>
+<a href="#NPC de Agite">NPC de Agite<br>
+</a><a href="#NPC's con Mana">NPC's con Mana</a></font></p>
+<hr color="#00FF00">
+<p><span lang="ES-AR"><font size="2" face="Verdana"><b>NPCTYPE - Tipos de NPC:<br>
+</b><span style="mso-ansi-language: ES-AR">0 - Común<br>
+1 - Resucitador y Curador<br>
+2 - Guardia de Armada (Poner Moviment=5)<br>
+3 - Entrenador<br>
+4 - Banquero<br>
+</span>5 - (nada)<br>
+<span style="mso-ansi-language: ES-AR">6 - (nada)<br>
+7 - Guardia del Kaos (Poner Moviment=6)<br>
+8 - Apostador (/APOSTAR &lt;cantidad&gt;)<br>
+9 - Aventurero (/AVENTURA)<br>
+10 - Reconstructor Facial (/OTRACARA)<br>
+11 - Lotería (/LOTERIA)<br>
+12 – Counter (/PARTICIPAR)</span></font></span></p>
+<hr color="#00FF00">
+<h2 style="MARGIN-LEFT: 36pt; TEXT-INDENT: -36pt; mso-list: l1 level1 lfo10; mso-list-change: &#61623;'^[GS]^' 20050102T0024; tab-stops: list 36.0pt; mso-text-indent-alt: -18.0pt"><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="NPCs (Ejemplos)">NPCs
+(Ejemplos)</a></font></b></span></h2>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC25] 'NPC Apostador<br>
+NpcType=8<br>
+Name=Apostador<br>
+Desc=Hola viajero, si quieres probar suerte escribe /APOSTAR 'cantidad'.<br>
+Head=5<br>
+Body=1<br>
+Heading=3<br>
+Movement=0<br>
+Domable=0</font></p>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC26] 'NPC Aventurero<br>
+NpcType=9<br>
+Name=Aventurero<br>
+Desc=Si deseas vivir una verdadera aventura, escribe '/AVENTURA'<br>
+Head=9<br>
+Body=1<br>
+Heading=3<br>
+Movement=0<br>
+Domable=0</font></p>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC27] 'NPC Recostructor Facial<br>
+NpcType=10<br>
+Name=Reconstructor Facial<br>
+Desc=Hola viajero, estas cansado de tu cara?? Trae 200k y escribe /OTRACARA.<br>
+Head=4<br>
+Body=1<br>
+Heading=3<br>
+Movement=0<br>
+Domable=0</font></p>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC28] 'NPC Guardia del Kaos<br>
+NpcType=7<br>
+Name=Guardia del Kaos<br>
+Desc=Dare muerte a todos los seguidores del rey.<br>
+Head=0<br>
+Body=83<br>
+Heading=3<br>
+Movement=6<br>
+Attackable=1<br>
+GiveEXP=1000<br>
+GiveGLD=0<br>
+MinHP=1000<br>
+MaxHP=1000<br>
+MaxHIT=250<br>
+MinHIT=115<br>
+PosOrig=1<br>
+DEF=30<br>
+Alineacion=1<br>
+ReSpawn=0<br>
+PoderAtaque=1400<br>
+PoderEvasion=1400<br>
+Domable=0<br>
+LanzaSpells=2<br>
+Sp1=24<br>
+Sp2=23</font></p>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC29] 'NPC Loteria<br>
+NpcType=11<br>
+Name=Loteria<br>
+Desc=Si deseas participar de la loteria, escribe '/LOTERIA'<br>
+Head=12<br>
+Body=1<br>
+Heading=3<br>
+Movement=0<br>
+Domable=0</font></p>
+<hr color="#008000">
+<p><font size="1" face="Verdana">[NPC30] 'NPC Counter<br>
+NpcType=12<br>
+Name=Counter<br>
+Desc=Si quieres jugar al Counter, escribe '/PARTICIPAR'<br>
+Head=12<br>
+Body=92<br>
+Heading=3<br>
+Movement=0<br>
+Domable=0</font></p>
+<hr color="#00FF00">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span lang="ES-AR"><b><font face="Verdana" size="4"><a name="Variables agregadas a NPCs-Hostiles">Variables
+agregadas a </a> </font></b><a name="Variables agregadas a NPCs-Hostiles"><b><font face="Verdana" size="4">NPCs-Hostiles</font></b></a></span></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><font size="1" face="Verdana"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><a name="Hijos">Hijos<o:p>
+</o:p>
+</a>
+</span></font></b></p>
+<p class="MsoNormal" style="MARGIN-LEFT: 35.4pt; mso-layout-grid-align: none"><font size="1" face="Verdana"><span lang="ES-AR" style="mso-ansi-language: ES-AR">Un
+npc puede dejar hasta 3 hijos cuando es matado.<br>
+Hijo1=545<br>
+Hijo2=567<br>
+Hijo3=568<o:p>
+</o:p>
+</span></font></p>
+<hr color="#008000">
+<p class="MsoNormal" style="mso-layout-grid-align: none"><b><font size="1" face="Verdana"><span lang="ES-AR" style="mso-ansi-language: ES-AR"><a name="NoMagia">NoMagia<o:p>
+</o:p>
+</a>
+</span></font></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.4pt"><span lang="ES-AR"><font size="1" face="Verdana">Si
+un npc no puede ser atacado con magia, se utiliza esta variable.<br>
+NoMagia=1</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font size="1" face="Verdana"><a name="BarreraEspejo">BarreraEspejo<o:p>
+</o:p>
+</a>
+</font></span></b></p>
+<p class="MsoBodyText" style="MARGIN-LEFT: 35.4pt"><span lang="ES-AR"><font size="1" face="Verdana">Nos
+sirve para especificar si el NPC puede devolver el ataca según su barrera
+espejo, que puede tomar valores de 0 a 100, como un porcentaje de probabilidades
+de defenderse del NPC. También es llamada la fuera del NPC.<br>
+BarreraEspejo=50</font></span></p>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font size="1" face="Verdana"><a name="NPC con Equipamiento">NPC
+con Equipamiento </a></font></span></b><a name="NPC con Equipamiento">&nbsp; <b><span lang="ES-AR"><font size="1" face="Verdana">
+</font></span></b></a></p>
+<div align="center">
+  <center>
+  <table width="810" bgcolor="#003300">
+    <tr>
+      <td width="142" height="37">
+        <p align="left"><font face="Verdana" size="1">...<br>
+        [NPC599]<br>
+        ...<br>
+        CascoIndex=131<br>
+        ArmaIndex=2<br>
+        EscudoIndex=130<br>
+        ...<br>
+        TiraEquip=1<br>
+        ...</font></p>
+      </td>
+      <td width="654" height="37"><font face="Verdana" size="1">Los
+        equipamientos del NPC solo necesitan indicarle el numero de Objeto que
+        usuaran.<br>
+        <br>
+        Y si el NPC tiene TiraEquip=1, tirara el equipamiento al morir.</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font size="1" face="Verdana"><a name="NPC que Lanzan Hechisos a Personajes Invisibles INTELIGENTEMENTE">NPC
+que Lanzan Hechisos a Personajes Invisibles INTELIGENTEMENTE</o:p>
+</a></font></span></b></p>
+<div align="center">
+  <center>
+  <table height="41" width="808" bgColor="#003300" border="0">
+    <tbody>
+      <tr>
+        <td width="144" height="37"><font face="Verdana" size="1">...<br>
+          AtacaInvis=1<br>
+          ...</font></td>
+        <td width="650" height="37"><font face="Verdana" size="1">Con esta
+          opcion, el NPC inteligente mente atacara a su agresor, aun si esta
+          invisible con magia, tomando en cuenta si tiene o no mensaje visible
+          :D</font></td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+</div>
+<hr color="#008000">
+<p class="MsoBodyText"><b><span lang="ES-AR"><font size="1" face="Verdana"><a name="NPC de Agite">NPC
+de Agite </o:p>
+</a>
+</font></span></b></p>
+<div align="center">
+  <center>
+  <table bgcolor="#003300" width="806">
+    <tr>
+      <td width="144" height="37"><font face="Verdana" size="1">...<br>
+        [NPC...]<br>
+        ...<br>
+        Movement=11<br>
+        ...</font></td>
+      <td width="648" height="37"><font face="Verdana" size="1">El <b>movement
+        11</b>, es una forma de movimento superior al PathFinding, aunque
+        normalmente puedan parecerse, el Moviment 11 es mas rapido.<br>
+        Ademas de eso, el NPC de agite, al tener este moviment unicamente es
+        capaz de usar Hechizos inteligentemente.<br>
+        + Tirara automaticamente Paralizar a cualquier User que no lo este.<br>
+        + Y si el NPC tiene el Hechi de Remover Raparalisis se removera solo y
+        muy rapidamente.</font></td>
+    </table>
+  </center>
+  </div>
+<hr color="#008000">
+<p class="MsoBodyText"><font size="1" face="Verdana"><b><a name="NPC's con Mana">NPC's
+con Mana</a></b></font></p>
+<div align="center">
+  <center>
+  <table bgcolor="#003300" width="806">
+    <tr>
+      <td width="144" height="37"><font face="Verdana" size="1">...<br>
+        [NPC...]<br>
+        ...<br>
+        Mana=3000<br>
+        ...</font></td>
+      <td width="648" height="37"><font face="Verdana" size="1">Con solo
+        indicarle que posee Mana, este NPC se convertira en un NPC meditante,
+        que gasta mana en sus ataques magicos.<br>
+        Se recomienda, ponerle una buena cantidad de mana.</font></td>
+    </table>
+  </center>
+</div>
+<hr color="#00FF00">
+
+</body>
+
+</html>

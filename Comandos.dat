@@ -1,0 +1,303 @@
+' %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+' 			    Ayuda de Comandos
+' %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+'
+' AYUDA sobre la AYUDA :P
+'
+' Categorias:
+' 	0 - General
+' 	1 - Creaturas / NPCs
+' 	2 - Usuarios
+' 	3 - Clanes / Party
+' 	4 - Banco
+' 	5 - Facciones
+' 	6 - Torneos
+' 	7 - Mascotas
+' 	8 - GMs
+'
+' Si no ingresamos Syntaxis, se entiende que el comando, se usa como se llama.
+
+'
+' Privilegios:
+' 	0 - Usuarios (no es necesario especificarlo)
+' 	1 - Consejeros / Aprendises / Administradores
+' 	2 - Semidioses / Aprendises / Administradores
+' 	3 - Dioses / Administradores
+'
+' El ENTER:
+' 	En Syntaxis y en Descripcion, podemos poner | para significar que baja de reglon/enter.
+'
+' Remplazos solo en Descripcion:
+' 	%ReconstructorFacial%	- El valor de la Reconstruccion Facial
+' 	%BoletoLoteria%		- El valor de la Loteria
+' 	%BoletoAventura%	- El valor de la Aventura
+'	%TiempoAventura%	- El tiempo que dura la aventura
+' 	%MoverUlla%		- El valor del Mover Ullathorpe
+' 	%MoverBander%		- El valor del Mover Banderbill
+' 	%MoverNix%		- El valor del Mover Mix
+' 	%MoverLindos%		- El valor del Mover Lindos
+' 	%MoverVeril%		- El valor del Mover Veril
+' 	%SkillClan%		- Skilles necesarios para Fundar Clan
+' 	%NivelClan%		- Niver necesario para Fundar Clan
+'
+' %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+' 			Escrito por ^[GS]^ para GS Server AO
+' %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+[INIT]
+NumComandos=46
+
+[COMANDO1]
+Comando=/ONLINEMAP
+Categoria=2
+Descripcion=Nos muestra todos los nombres de los usuarios que estén en nuestro mismo mapa.
+
+[COMANDO2]
+Comando=/ONLINECLAN
+Categoria=3
+Descripcion=Nos muestra los nombres de los integrantes de nuestro clan que se encuentren online.
+
+[COMANDO3]
+Comando=/ONLINE
+Categoria=2
+Descripcion=Nos muestra todos los nombres de los usuarios que se encuentren jugando en el momento.
+
+[COMANDO4]
+Comando=/SALIR
+Categoria=0
+Descripcion=Sirve para salir correctamente del juego, dependiendo el servidor nos puede hacer esperar unos segundos antes de salir.|No se puede salir mientras nos encontramos paralizados.
+ 
+[COMANDO5]
+Comando=/FUNDARCLAN
+Categoria=3
+Descripcion=Nos permite fundar un clan. Necesitamos %SkillClan% de Skills en Liderasgo y ser mayor o igual de nivel &NivelClan%.
+ 
+[COMANDO6]
+Comando=/BALANCE
+Categoria=4
+Descripcion=Para utilizarlo, clickea en el banquero, y luego escribe este comando, para que el banquero nos diga cuanto dinero tenemos depositado.
+ 
+[COMANDO7]
+Comando=/QUIETO
+Categoria=7
+Descripcion=Al utilizarlo después de haber clickeado a nuestra mascota, ella se quedara quieta, y no nos seguirá.
+ 
+[COMANDO8]
+Comando=/ACOMPAÑAR
+Categoria=7
+Descripcion=Al utilizarlo después de haber clickeado a nuestra mascota, ella comenzara a seguirnos a donde vallamos.
+ 
+[COMANDO9]
+Comando=/ENTRENAR
+Categoria=1
+Descripcion=Al utilizarlo después de haber clickeado a un entrenador, nos mostrara una ventana en donde nos dará a elegir con que criatura deseamos entrenar.
+ 
+[COMANDO10]
+Comando=/DESCANSAR
+Categoria=2
+Descripcion=Para utilizarlo, debes situarte muy cerca de una fogata, al iniciar en modo de descanso, tu energía subirá mucho mas rápido.
+ 
+[COMANDO11]
+Comando=/MEDITAR
+Categoria=2
+Descripcion=Cuando tenemos bajo el mana, de las magias, podemos iniciar el modo de meditación, para poder rellenar nuestro mana nuevamente.
+
+[COMANDO12]
+Comando=/RESUCITAR
+Categoria=1
+Descripcion=Al utilizarlo después de haber clickeado a un sacerdote, el nos resucitara, si estamos vivos, no.
+ 
+[COMANDO13]
+Comando=/CURAR
+Categoria=1
+Descripcion=Al utilizarlo después de haber clickeado a un sacerdote, el nos curara la vida.
+ 
+[COMANDO14]
+Comando=/EST
+Categoria=2
+Descripcion=Nos muestra nuestras estadísticas personales.
+ 
+[COMANDO15]
+Comando=/COMERCIAR
+Categoria=1
+Descripcion=Despues de haber clickeado un NPC o un usuario, pones este comando para iniciar el modo de comercio.
+ 
+[COMANDO16]
+Comando=/BOVEDA
+Categoria=4
+Descripcion=Al utilizarlo después de clickear en un banquero, el nos dejara guardar items de nuestro inventario en su bóveda.
+ 
+[COMANDO17]
+Comando=/ENLISTAR
+Categoria=5
+Descripcion=Lo utilizaremos después de clickear, al NPC que elijas como bando, recuerda los bandos son Kaos y Armada.
+ 
+[COMANDO18]
+Comando=/INFORMACION
+Categoria=5
+Descripcion=Lo utilizaremos después de clickear a tu jefe de bando. Y con esto nos dará mas información.
+ 
+[COMANDO19]
+Comando=/RECOMPENSA
+Categoria=5
+Descripcion=Al utilizarlo después de haber clickeado a tu jefe de bando, no dirá cuando recibiremos una recompensa o sino nos la dará en el momento.
+ 
+[COMANDO20]
+Comando=/CMSG
+Categoria=3
+Syntaxis=/CMSG <mensaje>
+Descripcion=Nos sirve para comunicarnos con todos los integrantes de nuestro mismo clan.
+ 
+[COMANDO21]
+Comando=/GM
+Categoria=8
+Descripcion=Envía un pedido de ayuda al GM.
+ 
+[COMANDO22]
+Comando=/BUG
+Categoria=8
+Syntaxis=/BUG <mensaje>
+Descripcion=Envía un mensaje sobre un error, que es archivado, y utilizado para corregir errores en el juego.
+ 
+[COMANDO23]
+Comando=/DESC
+Categoria=2
+Syntaxis=/DESC <mensaje>
+Descripcion=Nos permite cambiar la descripción de nuestro personaje.
+ 
+[COMANDO24]
+Comando=/VOTO
+Categoria=3
+Syntaxis=/VOTO <nombre>
+Descripcion=Vota a un integrante de tu clan, para líder. Solo si es día de elecciones.
+ 
+[COMANDO25]
+Comando=/TORNEO
+Categoria=6
+Descripcion=Al ponerlo una vez, nos inscribe a un torneo, si lo escribimos nuevamente nos borramos del torneo.
+ 
+[COMANDO26]
+Comando=/PASSWD
+Categoria=2
+Syntaxis=/PASSWD <password>
+Descripcion=Nos permite cambiar el password de nuestro personaje.
+ 
+[COMANDO27]
+Comando=/RETIRAR
+Categoria=4
+Syntaxis=/RETIRAR <cantidad>
+Descripcion=Al usarlo después de haber clickeado un banquero, nos permitirá retirar la cantidad de dinero que queramos, y tengamos depositada.
+ 
+[COMANDO28]
+Comando=/DEPOSITAR
+Categoria=4
+Syntaxis=/DEPOSITAR <cantidad>
+Descripcion=Al utilizarlo después de haber clickeado un banquero, nos permite depositar nuestro dinero en el banco.
+ 
+[COMANDO29]
+Comando=\
+Categoria=2
+Syntaxis=\<nombre> <mensaje>
+Descripcion=Envía un mensaje privado al usuario que queramos.
+ 
+[COMANDO30]
+Comando=/GMSG
+Categoria=8
+Syntaxis=/GMSG <mensaje>
+Descripcion=Envía un mensaje directo a todos los GMs.
+ 
+[COMANDO31]
+Comando=-
+Categoria=2
+Syntaxis=-<mensaje>
+Descripcion=Nos sirve para gritar un mensaje, en vez de hablarlo.
+ 
+' %%% GS-Server Commands
+
+[COMANDO32]
+Comando=/APOSTAR
+Categoria=1
+Syntaxis=/APOSTAR <cantidad>
+Descripcion=Al utilizarlo después de haber clickeado a un apostador, nos dejara apostar nuestro dinero a nuestra suerte.
+
+[COMANDO33]
+Comando=/SALIRCLAN
+Categoria=3
+Descripcion=Con este comandos salimos de un clan.
+
+[COMANDO34]
+Comando=/CREDITOS
+Categoria=0
+Descripcion=Te informa sobre quienes ayudaron ha hacer el servidor.
+ 
+[COMANDO35]
+Comando=/CASAR
+Categoria=2
+Syntaxis=/CASAR <nombre>
+Descripcion=Envía una solicitud de matrimonio a el otro usuario, el cual debe de ser de distinto genero.|Para aceptar tu solicitud la otra persona deberá poner lo mismo pero con tu nombre.|Para divorciarse, escribe /DIVORCIARSE
+ 
+[COMANDO36]
+Comando=/DIVORCIARSE
+Categoria=2
+Descripcion=Nos divorciamos con quien nos hallamos casado, sin necesidad de que la otra persona este jugando.
+ 
+[COMANDO37]
+Comando=/MOVER
+Categoria=2
+Syntaxis=/MOVER <lugar>
+Descripcion=Nos teletransporta a una ciudad a cambio de dinero.|Los lugares y sus precios son: ULLA(%MoverUlla%), NIX(%MoverNix%), BANDER(%MoverBander%), LINDOS(%MoverLindos%) y VERIL(%MoverVeril%).|No puedes teletransportante si estas paralizado.|Solo puedes teletransportarte si estas en un lugar seguro.
+ 
+[COMANDO38]
+Comando=/REGALAR
+Categoria=2
+Syntaxis=/REGALAR <cantidad>
+Descripcion=Regala una cantidad de dinero al ultimo jugador que hallamos clickeado.|Nos puede subir skilles en suerte.
+ 
+[COMANDO39]
+Comando=/URGENTE
+Categoria=8
+Syntaxis=/URGENTE <mensaje>
+Descripcion=Envía un mensaje de urgencia al GM. El mensaje es acompañado por nuestra ubicacion.
+ 
+[COMANDO40]
+Comando=/OTRACARA
+Categoria=1
+Descripcion=Al utilizarlo después de haber clickeado sobre un NPC de reconstrucción facial nos cambiara a otra cara al azar.
+ 
+[COMANDO40]
+Comando=/POWA
+Categoria=2
+Descripcion=Nos dice quien es el jugador con mas nivel en todo el servidor.
+ 
+[COMANDO41]
+Comando=/PARTY
+Categoria=3
+Descripcion=Al utilizarlo después de haber clickeado a un jugador, solicitamos o aceptamos una petición de party, que consiste en dividir las experiencias.|Para quitarlo, necesitamos poner /DEJARPARTY.
+ 
+[COMANDO42]
+Comando=/DEJARPARTY
+Categoria=3
+Descripcion=Al utilizarlo saldremos de la party en donde estemos, ya sea como líder o participante.
+ 
+[COMANDO43]
+Comando=/PMSG
+Categoria=3
+Syntaxis=/PMSG <mensaje>
+Descripcion=Enviamos un mensaje a todos los integrantes de la Party.
+ 
+[COMANDO44]
+Comando=.
+Categoria=0
+Syntaxis=<parte1>.<parte2>
+Descripcion=Nos sirve para representar un espacio en el nombre de un personaje.|Se puede representar infinitas veces.|Ejemplo: \el.chavo Hola.
+  
+[COMANDO45]
+Comando=/AVENTURA
+Categoria=1
+Descripcion=Después de haber clickeado a un NPC Aventurero, pagando %BoletoAventura% viajaremos a un mapa lleno de aventuras, por %TiempoAventura% minutos.
+
+[COMANDO46]
+Comando=/LOTERIA
+Categoria=1
+Descripcion=Al utilizarlo después de clickear sobre un NPC de lotería, podemos participar en ella por el pozo acumulado, que supera el millones de monedas de oro.|El NPC nos dará 2 números de 2 cifras de nuestro boleto de lotería y podremos ganar mas de 1000000 monedas de oro.

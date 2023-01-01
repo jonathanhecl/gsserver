@@ -1,0 +1,32 @@
+#############################
+# Exclusivo de GS Server AO #
+# Ejemplo:                  #
+#############################
+# NOTA:
+# Solo pueden funcionarse 
+# objetos equipables.
+#############################
+# [INIT]
+# NumFuciones=1
+#
+# [FUCION1]
+# Intercambia=1
+### Si tiene Intercambia=1 significa 
+### que pierde el requisito para obtener
+### el resultado.
+# NumRequisitos=2
+### El maximo de Requisitos son 5
+### Recuerda que los items deven estar equipados asi, que no puedes poner 2 veces
+### una espada, si ya hay 2 veces una armadura porque sera imposible realizar la fucion.
+### Pero si pones 2 espadas, en el momento en el que intente equipar la otra teniendo ya
+### esta, se cumpliran los requisitos.
+# Requisito1=523-1
+# Requisito2=544-6
+# NumResultados=2
+### El maximo de Resultados son 10
+# Resultado1=512-1
+# Resultado2=533-1
+#
+
+[INIT]
+NumFuciones=0

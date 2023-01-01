@@ -1,0 +1,16 @@
+                                         -------------------------------------
+                                               GS Server AO
+                                         -------------------------------------
+                                     Servidor de Argentum Online
+
+Por favor, antes de continuar con la instalacion lea estas sugerencias:
+* Si es la primera vez que va a instalar el servidor, se recomienda hacer la instalación completa. 
+* En el caso de ya tenes instalado el servidor, hacer una instalacion compacta. (No instalar los componentes marcados con el *(asterisco), en el caso que decidas instalarlos igual recuerda que el servidor genera carpetas de Seguridad en cada seccion, lo unico que no se podra recuperar es server.ini y los Clanes)
+* Para ver los cambios de esta versión, ver sAO.html, luego de instalar el servidor.
+-----------------------------------------------------------------------------------------------------------------------------
+Compatible con las versiones: 9.9z, 0.11.0, 0.11.1, 0.11.2 y clientes editados (autorizados).
+-----------------------------------------------------------------------------------------------------------------------------
+
+		              (r) NMS Optimized
+	               Copyright © GS Studios 2004-2005
+	              WebSite: http://www.gs-zone.com.ar

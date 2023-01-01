@@ -1,0 +1,224 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Pagina nueva 1</title>
+</head>
+
+<body bgcolor="#000000" text="#00FF00">
+
+<p align="center">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="logo" width="238" height="55">
+  <param name="movie" value="logo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="logo" src="paginas/logo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="238" height="55"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+<br>
+<b><font face="Verdana" size="4">Configurar el Servidor - GM's</font></b></p>
+<hr color="#00FF00">
+<p align="center"><font size="1" face="Verdana"><b><a href="config.html">Volver
+atras</a></b></font></p>
+
+<p align="center"><font size="1" face="Verdana"><b><a href="#Colores">Colores<br>
+</a></b></font><font face="Verdana" size="1"><b><a href="#Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">Comparativa
+de comandos permitidos</a></b><b><a href="#Colores"><br>
+</a><a href="#Sistema de Privilegios escalares">Sistema de Privilegios escalares</a><br>
+<a href="#Sistema de Administracion">Sistema de Administracion<br>
+</a><a href="#Los Ayudantes">Los Ayudantes</a></b></font></p>
+
+<hr color="#00FF00">
+<p align="left"><b><font face="Verdana" size="2"><a name="Colores">Colores</a></font></b></p>
+<table>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1"><b><font color="#c0c0c0">Gris</font></b></font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Administrador</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1"><b><font color="#33ccff">Celeste</font></b></font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Aprendiz de Admin.</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1"><b>Verde Claro</b></font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Dios</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1"><b><font color="#008000">Verde
+      Oscuro</font></b></font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Semi-Dios</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1"><b><font color="#ffff99">Amarillo</font></b></font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Consejero</font></td>
+  </tr>
+</table>
+<hr color="#00FF00">
+<p align="left"><b><font face="Verdana" size="2"><a name="Comparativa de comandos permitidos del Sistema de Privilegios escalares Vs el Sistema de Administracion">Comparativa
+de comandos permitidos</a></font></b></p>
+<table>
+  <tr>
+    <td width="112" height="26"><font face="Verdana" size="1">1 - Consejero</font></td>
+    <td width="362" height="26"><font face="Verdana" size="1">Administrador/Aprendiz
+      de Administrador</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="25"><font face="Verdana" size="1">2 - Semidios</font></td>
+    <td width="362" height="25"><font face="Verdana" size="1">Administrador/Aprendiz
+      de Administrador</font></td>
+  </tr>
+  <tr>
+    <td width="112" height="21"><font face="Verdana" size="1">3 - Dios</font></td>
+    <td width="362" height="21"><font face="Verdana" size="1">Administrador</font></td>
+  </tr>
+</table>
+<hr color="#00FF00">
+<p align="left"><font face="Verdana" size="3"><b><a name="Sistema de Privilegios escalares">Sistema
+de Privilegios escalares</a></b></font></p>
+<hr color="#008000">
+<p align="left"><font size="1" face="Verdana">Como primera cosa, explicare como
+agregar/quitar Consejeros, SemiDioses y Dioses.<br>
+Para ello, debemos dirigirnos a SERVER.ini en la carpeta del servidor, y buscan
+donde:</font></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><b>SERVER.INI<br>
+      </b><br>
+      [INIT]<br>
+      ...<br>
+      Dioses=0<br>
+      SemiDioses=0<br>
+      Consejeros=0<br>
+      Ayudantes=0<br>
+      <br>
+      [DIOSES]<br>
+      Dios1=<br>
+      <br>
+      [SEMIDIOSES]<br>
+      SemiDios1=<br>
+      <br>
+      [CONSEJEROS]<br>
+      Consejero1=<br>
+      <br>
+      [AYUDANTES]<br>
+      Ayudante1=</font></td>
+  </tr>
+</table>
+<p align="left"><font size="1" face="Verdana">Ahora en donde [INIT] Dioses=
+colocamos la cantidad total de nuestros dioses.<br>
+Despues en [DIOSES] Dios1=Nombre1<br>
+Y segun la cantidad de dioses, deberiamos poner [DIOSES] Dios2=Nombre2<br>
+[DIOSES] Dios3=Nombre3<br>
+etc</font></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><b>SERVER.INI (Ejemplo)<br>
+      </b><br>
+      [INIT]<br>
+      ...<br>
+      Dioses=2<br>
+      SemiDioses=1<br>
+      Consejeros=1<br>
+      Ayudantes=1<br>
+      <br>
+      [DIOSES]<br>
+      Dios1=GS<br>
+      Dios2=Z LiNk<br>
+      <br>
+      [SEMIDIOSES]<br>
+      SemiDios1=SemiGM<br>
+      <br>
+      [CONSEJEROS]<br>
+      Consejero1=Pedrito<br>
+      <br>
+      [AYUDANTES]<br>
+      Ayudante1=Lord Help</font></td>
+  </tr>
+</table>
+<p align="left"><font size="1" face="Verdana">Lo mismo con los SemiDioses, Consejeros
+y Ayudantes.</font></p>
+<hr color="#00FF00">
+<p align="left"><font face="Verdana" size="3"><b><a name="Sistema de Administracion">Sistema
+de Administracion</a></b></font></p>
+<hr color="#008000">
+<p align="left"><font size="1" face="Verdana">Este nuevo sistema, nos da
+muchisimo mas dominio sobre los GM's.<br>
+Para agregar y quitar un miembro de los administradores, necesitamos modificar
+el Charfile del usuario, para ello, el servidor posee un menu muy dinamico en el
+Escaneador de Pj's del Servidor.</font></p>
+<p align="left"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,42,0"
+  id="Privilegios_Ejemplo" width="641" height="433">
+  <param name="movie" value="Privilegios_Ejemplo.swf">
+  <param name="quality" value="high">
+  <param name="bgcolor" value="#000000">
+    <embed name="Privilegios_Ejemplo" src="Privilegios_Ejemplo.swf"
+     quality="high" bgcolor="#000000" swLiveConnect="true"
+     width="641" height="433"
+     type="application/x-shockwave-flash"
+     pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+</object></p>
+<table border="0" width="100%" bgcolor="#003300">
+  <tr>
+    <td width="100%"><font size="1" face="Verdana"><b>(Explicacion en el
+      Charfile)<br>
+      </b><br>
+      </font><font size="1" face="Verdana">[ADMINISTRACION]<br>
+      EnPrueba=0<br>
+      Activado=0<br>
+      CP=1<br>
+      CP1=/mod*</font></td>
+  </tr>
+</table>
+<p align="left"><font size="1" face="Verdana">EnPrueba=(1/0) esto indica si el
+Personaje esta en prueba o no, si esta en prueba sera vigilado como si fuese un
+Consejero, no podra tomar ni tirar objetos, pero podra hacer comandos hasta los
+de SemiDioses, segun sean sus permisos. (Si esta en Prueba es llamado <b>Aprendiz
+de Administrador</b>)<br>
+Activado=(1/0) si el Personaje esta activado, significa que es Administrador/GM,
+si esta desactivado, es un usuario comun y corriente.<br>
+CP=(cantidad) indica cuantos son los Comandos Prohibidos del Personaje.<br>
+CP1=(comando prohibido) indica cual es el comando prohibido, se puede utilizar
+el * al comiendo, al final, y tambien entre medio, un * a la vez.<br>
+Se pueden agregar tantos comandos prohibidos como sea necesario.</font></p>
+<hr color="#00FF00">
+<p align="left"><font face="Verdana" size="3"><b><a name="Los Ayudantes">Los Ayudantes</a></b></font></p>
+<hr color="#008000">
+<table>
+  <tr>
+    <td width="100%"><font face="Verdana" size="1" color="#00FF00">! <b>NOTA
+      ACERCA DE LOS AYUDANTES:</b> Para que siven los Ayudantes se preguntaran,
+      si para eso hago un Consejero que es mejor, bueno, el objetivo de este
+      nuevo cargo, es que sea un usuario normal, que este jugando y sin
+      obligacion cuando quiera podra ir a ayudar a otros usuarios que necesiten
+      ayuda. La idea principal del comando, es para los GM's que no tienen ganas
+      de ser GM todo el tiempo, tener una forma de responder consultas y jugar
+      al mismo tiempo, sin que ni siquiera nadie tenga que saber quien es en
+      realidad.&nbsp;<br>
+      (Puede ser el HOST u otros, incluso se puede utilizar como un modo de
+      prueba antes de hacer o no al usuario Consejero)</font></td>
+  </tr>
+  <tr>
+    <td width="100%"><b><font face="Verdana" size="1" color="#00FF00">DESTACADO:
+      </font></b><font face="Verdana" size="1" color="#00FF00">Un Ayudante no
+      puede hacer ningun otro comando de administracion que /SHOW SOS y /SOS.
+      Con lo que es muy seguro.<br>
+      Un personaje, Consejero, SemiDios, Dios, Administrador o Aprendiz de
+      Administrador, no pueden ser Ayudantes, porque no funcionara.<br>
+      Se podra asignar o quitar Ayudantes con el siemple comando /AYUDANTE, solo
+      para Dioses/Admin,&nbsp;<br>
+      y el Ayudante no necesita estar online para recibir este cargo.</font></td>
+  </tr>
+</table>
+<hr color="#00FF00">
+
+</body>
+
+</html>

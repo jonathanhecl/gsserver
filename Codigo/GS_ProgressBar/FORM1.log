@@ -1,0 +1,28 @@
+Línea 122: la clase ComctlLib.StatusBar del control StatusBar1 no era una clase de control cargada.
+Línea 168: la clase Project1.XP_ProgressBar del control XP_ProgressBar1 no era una clase de control cargada.
+Línea 188: la clase Project1.XP_ProgressBar del control XP_ProgressBarx no era una clase de control cargada.
+Línea 207: la clase Project1.XP_ProgressBar del control XP_ProgressBarSilver no era una clase de control cargada.
+Línea 227: la clase Project1.XP_ProgressBar del control XP_ProgressBarOlive no era una clase de control cargada.
+Línea 246: la clase Project1.XP_ProgressBar del control XP_ProgressBarBlue no era una clase de control cargada.
+Línea 129: el nombre de la propiedad _ExtentX de StatusBar1 no es válido.
+Línea 130: el nombre de la propiedad _ExtentY de StatusBar1 no es válido.
+Línea 131: el nombre de la propiedad SimpleText de StatusBar1 no es válido.
+Línea 132: el nombre de la propiedad _Version de StatusBar1 no es válido.
+Línea 153: el nombre de la propiedad Panels de StatusBar1 no es válido.
+Línea 174: el nombre de la propiedad _ExtentX de XP_ProgressBar1 no es válido.
+Línea 175: el nombre de la propiedad _ExtentY de XP_ProgressBar1 no es válido.
+Línea 185: el nombre de la propiedad Color de XP_ProgressBar1 no es válido.
+Línea 186: el nombre de la propiedad Value de XP_ProgressBar1 no es válido.
+Línea 194: el nombre de la propiedad _ExtentX de XP_ProgressBarx no es válido.
+Línea 195: el nombre de la propiedad _ExtentY de XP_ProgressBarx no es válido.
+Línea 205: el nombre de la propiedad Color de XP_ProgressBarx no es válido.
+Línea 213: el nombre de la propiedad _ExtentX de XP_ProgressBarSilver no es válido.
+Línea 214: el nombre de la propiedad _ExtentY de XP_ProgressBarSilver no es válido.
+Línea 224: el nombre de la propiedad Color de XP_ProgressBarSilver no es válido.
+Línea 225: el nombre de la propiedad Value de XP_ProgressBarSilver no es válido.
+Línea 233: el nombre de la propiedad _ExtentX de XP_ProgressBarOlive no es válido.
+Línea 234: el nombre de la propiedad _ExtentY de XP_ProgressBarOlive no es válido.
+Línea 244: el nombre de la propiedad Color de XP_ProgressBarOlive no es válido.
+Línea 252: el nombre de la propiedad _ExtentX de XP_ProgressBarBlue no es válido.
+Línea 253: el nombre de la propiedad _ExtentY de XP_ProgressBarBlue no es válido.
+Línea 263: el nombre de la propiedad Color de XP_ProgressBarBlue no es válido.

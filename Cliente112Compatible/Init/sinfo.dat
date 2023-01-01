@@ -1,0 +1,14 @@
+[INIT]
+Cant =2
+
+[S1]
+Desc=Servidor Minehost - Online
+IP=45.235.98.203
+PJ= 7668
+P2= 7669
+[S2]
+Desc=Localhost (OFFLINE)
+IP=localhost
+PJ= 7666
+P2= 7666
+

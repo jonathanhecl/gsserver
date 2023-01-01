@@ -1,0 +1,131 @@
+################################
+Sistema de codificacion codecXXX
+     Programado by ^[GS]^
+    Programado en 40 min.
+################################
+
+Solo necesitas modificar, tres archivos, declares.bas, tcp.bas y frmMain.frm.
+A continuacion se muestran los cambios efectuados.
+
+
+[Declares.bas]
+...
+...
+...
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	' Variables publicas para el sistema de codecXXX
+ 	Public CodecXXX as Boolean	' Indica si el sistema se esta utilizando
+	Public CodecServidor as String	' Almacena el codec del servidor
+	' Constante del sistema
+	Const CodecCliente = "ingresa_aqui_el_codec"	' Almacena el codec unico del cliente
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+...
+...
+
+
+[TCP.bas]
+...
+...
+...
+Sub HandleData(ByVal Rdata As String)
+...
+...
+...
+   
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ' En esta parte, decodifica cada uno de los paquetes recibidos.
+    If CodeXXX = True Then
+ 	sData = CodecXXX(sData)	
+    End If
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Select Case sData
+        Case "LOGGED"            ' >>>>> LOGIN :: LOGGED
+            logged = True
+...
+...
+...
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	' Guarda el Codec del servidor
+	If Left$(sData,4) = "CODEC" Then
+		CodecServidor= Right$(sData, Len(sData) - 4)
+		Exit Sub
+	End If
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    Select Case Left(sData, 3)
+        Case "VAL"                  ' >>>>> Validar Cliente :: VAL
+            Rdata = Right$(Rdata, Len(Rdata) - 3)
+            'If frmBorrar.Visible Then
+            bK = CLng(ReadField(1, Rdata, Asc(",")))
+            bO = 100 'CInt(ReadField(1, Rdata, Asc(",")))
+            bRK = ReadField(2, Rdata, Asc(","))
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	    ' Acepta comenzar a negociar mediante el codec
+	    If Len(CodecServidor) > 3 Then 
+		Call SendData("CODECOK")
+		CodecXXX = True
+	    End If
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            If EstadoLogin = BorrarPj Then
+                Call SendData("BORR" & frmBorrar.txtNombre.Text & "," & frmBorrar.txtPasswd.Text & "," & ValidarLoginMSG(CInt(Rdata)))
+            ElseIf EstadoLogin = Normal Or EstadoLogin = CrearNuevoPj Then
+                Call Login(0)
+            ElseIf EstadoLogin = Dados Then
+                frmCrearPersonaje.Show vbModal
+            End If
+            Exit Sub
+...
+...
+...
+
+
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+' Esta es la funcion de decodificacion de los comandos, no modificar
+Function codecXXX(ByVal Texto as string)
+On Error Goto fallo
+	Dim lS As Integer
+	Dim lC As Integer
+	lS = 0
+	lC = Len(codecCliente) + 1
+	codecXXX = ""
+	For i = 1 To Len(Texto)
+	    lS = lS + 1
+	    lC = lC - 1
+	    codeXXX = codeXXX & Chr$((Asc(Mid$(Texto, i, 1)) Xor Asc(Mid$(bRK & codecServidor, lS, 1)) Xor 1) Xor Asc(Mid$(codecCliente, lC, 1)) Xor 1)
+	    If lS = Len(bRK & codecServidor) Then lS = 0
+	    If lC = 1 Then lC = Len(codecCliente) + 1
+	Next
+	Exit Function
+fallo:
+End Function
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+[frmMain.frm]
+...
+...
+...
+Private Sub Socket1_Connect()
+...
+...
+...
+    ServerIp = Mid(ServerIp, Temporal + 1, Len(ServerIp)) Xor &H42
+    MixedKey = (Temporal1 + ServerIp)
+    
+    Second.Enabled = True
+
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ' Elimina la informacion sobre el codec
+    CodecServidor = ""
+    CodecXXX = False
+' ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    
+    'If frmCrearPersonaje.Visible Then
+    If EstadoLogin = CrearNuevoPj Then
+        Call SendData("gIvEmEvAlcOde")
+    'ElseIf Not frmRecuperar.Visible Then
+...
+...
+...

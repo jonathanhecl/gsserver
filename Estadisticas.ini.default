@@ -1,0 +1,21 @@
+#
+# Estadisticas de GS Server AO
+# ----------------------------
+
+[SERVER]
+RecordUsuarios=0
+
+[POWA-LVL]
+Nombre=nadie
+Level=0
+
+[POWA-PK]
+Nombre=nadie
+Cantidad=0
+
+[POWA-TO]
+Nombre=nadie
+TiempoOnline=0
+
+[LOTERIA]
+Pozo_Loteria=1000000
